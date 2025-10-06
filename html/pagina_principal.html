@@ -1,0 +1,59 @@
+<html>
+<head>
+    <script defer src="../javascript/pagina_principal.js"></script>
+    <link rel="stylesheet" href="../css/pagina_principal.css">
+    <meta charset="UTF-8">
+    <title>Página principal</title>
+</head>
+<body>
+<!--Modelo de página principal-->
+    <div class="main">
+        <div class="cabecalho">
+            <h4>AQUI A RINHA DE ANIMAL É PERMITIDA</h4>
+        </div>
+        <div class="principal">
+            <div> <img src="../imagens_site/masterball_icon.png"> </div> 
+            <div> <button type="button" onclick="produtos()">Produtos </button> </div> 
+            <div> <button type="button" onclick="carrinho()">Carrinho </button> </div>
+        </div>
+
+        <div class="conteudo">
+            <div>
+                <h2> Em pleno 2022...  </h2>
+                <h2> Ano da Copa...  </h2>
+                <h2> Ano das eleições...  </h2>
+                <h2> E ainda tem gente preconceituosa.</h2>
+                <h2> Que não aceita rinha de animais.   </h2>
+            </div>
+        </div>
+        <div id="depoimentos" class="depoimentos">
+            <h1>Depoimentos</h1>
+        </div>
+        <div class="end_contato">
+            <div class="card_endereco">
+                <h1>Endereço e Contato</h1>
+                <div class="card_end">
+                    <h4>Endereço: New York, NY 10004, EUA</h4>
+                    <h4>Email: pokemon@nintendo.com</h4>
+                    <h4>Telefone: (41) 99667-2244</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <button onclick="facebook()"><img src="../imagens_site/facebook.png" width="40px" height="40px"></button>
+            <button onclick="twitter()"><img src="../imagens_site/twitter.png" width="40px" height="40px"></button> 
+            <button onclick="pinterest()"><img src="../imagens_site/pinterest.png" width="40px" height="40px"></button> 
+            <button onclick="instagram()"><img src="../imagens_site/instagram.png" width="40px" height="40px"></button>
+        </div>
+    </div>
+<!--==========================-->
+
+
+<!--Formulário para consultar o id a partir do e-mail-->
+    <form id="formEmail">
+        <input type="hidden" id="id_email" name="id_email">
+    </form>
+<!--==========================-->
+</body>
+</html>

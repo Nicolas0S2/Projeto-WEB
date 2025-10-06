@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/carrinho.css">
+    <script defer src="../javascript/carrinho.js"></script>
+    <title>Carrinho</title>
+</head>
+<body>
+<!--Modelo de página principal-->
+<div class="main">
+    <div class="cabecalho">
+        <h4>AQUI A RINHA DE ANIMAL É PERMITIDA</h4>
+    </div>
+    <div class="principal">
+        <div> <img src="../imagens_site/masterball_icon.png"> </div> 
+        <div> <button type="button" onclick="pagina_principal()">Página Principal</button> </div> 
+        <div> <button type="button" onclick="finalizar_compra()">Finalizar Compra</button> </div>
+    </div>
+    <div class="conteudo">
+        <div id="produtos" class="produtos"></div>
+    </div>
+</div>
+<!--==========================-->
+
+
+<!--Id para consultar o carrinho do usuário no banco de dados-->
+    <form id="formId">
+        <input type="hidden" id="id_pessoa" name="id_pessoa">
+    </form>
+<!--==========================-->
+
+
+<!--Formulario para atualizar o carrinho do usuário-->
+    <form id="formAtualiza">
+        <input type="hidden" id="pessoa" name="pessoa">
+        <input type="hidden" id="produto" name="produto">
+        <input type="hidden" id="quantidade" name="quantidade">
+    </form>
+<!--==========================-->
+
+
+
+</body>
+</html>

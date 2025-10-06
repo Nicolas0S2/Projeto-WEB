@@ -1,0 +1,40 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../css/produtos.css">
+    <script defer src="../javascript/produtos.js"></script>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+</head>
+<body>
+<!--Modelo de página principal-->
+<div class="main">
+    <div class="cabecalho">
+        <h4>AQUI A RINHA DE ANIMAL É PERMITIDA</h4>
+    </div>
+    <div class="principal">
+        <div> <img src="../imagens_site/masterball_icon.png"> </div> 
+        <div> <button type="button" onclick="pagina_principal()">Página Principal</button> </div> 
+        <div> <button type="button" onclick="pagina_carrinho()">Carrinho</button> </div>
+    </div>
+    <div class="conteudo">
+        <div id="produto" class="produtos"></div>
+    </div>
+</div>
+<!--==========================-->
+
+<!--Form para salvar na tabela carrinho o id de produto, o id de pessoa e a quantidade de vezes que um produto foi adicionado ao carrinho-->
+    <form id="formCarrinho">
+        <input type="hidden" id="id_produto" name="produto">
+        <input type="hidden" id="id_pessoa" name="pessoa">
+        <input type="hidden" id="quantidade" name="quantidade">
+    </form>
+<!--==========================-->
+
+<!--Extrai do banco de dados a quantidade e o id dos produtos no carrinho do usuário para se o usuário adicionar mais vezes um produto no carrinho os valores sempre estejam atualizados com base no banco de dados-->
+    <form id="formQuantidades">
+        <input type="hidden" id="quantidades" name="quantidades">
+    </form>
+<!--==========================-->
+
+</body>
+</html>

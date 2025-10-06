@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../javascript/finalizar_compra.js" defer></script>
+    <link rel="stylesheet" href="../css/finalizar_compra.css">
+    <title>Finalizar Compra</title>
+</head>
+<body>
+<!--Modelo de página principal-->
+<div class="main">
+    <div class="cabecalho">
+        <h4>AQUI A RINHA DE ANIMAL É PERMITIDA</h4>
+    </div>
+    <div class="principal">
+        <div> <img src="../imagens_site/masterball_icon.png"> </div> 
+    </div>
+    
+    <div class="conteudo">
+            <div class="card">
+            <div id="people"> </div>
+            <div>
+                <select name="tipo_pagamento" id="tipo_pagamento" class="botao">
+                    <option value="Tipo">Tipo de pagamento</option>
+                    <option value="Pix">PIX</option>
+                    <option value="Acartao">À vista no cartão</option>
+                    <option value="Vcartao">Parcelado no cartão</option>
+                </select>
+                <button class="botao" type="button" onclick="gravar()">Escolher</button>
+            </div>
+                <div id="info">
+
+                </div>
+                <div><button class="botao" type="button" onclick="finalizar_compra()">Finalizar compra</button></div>
+                <div id="alert"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==========================-->
+
+
+<!--recebe os inputs de tipo de pagamento e id do usuário-->
+    <form id="formCompra">
+        <input type="hidden" id="tipoPagamento" name="tipoPagamento">
+        <input type="hidden" id="id_pessoa" name="id_pessoa">
+        <input type="hidden" id="pix_db" name="pix_db">
+        <input type="hidden" id="num_card_db" name="num_card_db">
+        <input type="hidden" id="nome_db" name="nome_db">
+        <input type="hidden" id="validade_db" name="validade_db">
+        <input type="hidden" id="digito_db" name="digito_db">
+        <input type="hidden" id="parcelas_db" name="parcelas_db">
+    </form>
+<!--==========================-->
+
+
+<!--Recebe o valor total do carrinho salvo no banco de dados-->
+    <form id="formTotal">
+        <input type="hidden" id="pessoa" name="pessoa"> 
+    </form>
+<!--==========================-->
+</body>
+</html>

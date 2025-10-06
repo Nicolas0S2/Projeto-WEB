@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script src="../javascript/cadastro.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+<!--Formulário de cadastro-->  
+    <div class="main_cadastro">
+        <div class="card_cadastro">
+            <form id="formCadastro">
+                <div class="text">
+                    <h1>Cadastro</h1>
+                    <input id="nome" type="text" placeholder="Nome" name="nome">
+                    <input id="cpf" type="text" placeholder="CPF" name="cpf">
+                    <input id="email" type="email" placeholder="E-mail" name="email"> <br>
+                    <input id="senha" type="password" placeholder="Senha" name="senha"> <br>
+                    <input id="cSenha" type="password" placeholder="Confirmar Senha" name="cSenha">
+                    <div id="alert" class="alert"></div>
+                </div>
+            </form>
+                <button onclick="cadastrar()" type="button">Cadastrar-se</button>
+        </div>
+    </div>
+<!--==========================-->
+
+</body>
+</html>

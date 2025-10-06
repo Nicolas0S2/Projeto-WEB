@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../javascript/index.js" defer></script>
+    <title>E-Commerce</title>
+</head>
+<body>
+
+<!--Formulário de login-->
+    <div class="main-login">
+        <div class="login-left">
+            <h1>"Gotta Catch 'Em All"</h1>
+            <img src="../imagens_site/mewtwo.png" alt="mewtwo">
+        </div>
+
+        <div class="login-right">
+                <div class="card">
+                    <form id="formLogin">
+                        <div class="text">
+                            <h1>Login</h1>
+                            <input id="email" type="email" placeholder="E-mail" name="email">
+                            <input id="senha" type="password" placeholder="Senha" name="senha">
+                            <div id="alert" class="alert"></div>
+                        </div>
+                    </form>
+                        <button onclick="login()" type="button">Login</button>
+                        <button onclick="cadastro()" type="button">Cadastre-se</button>
+                </div>
+            </div>
+    </div>
+<input type="hidden" id="get_email">
+<!--==========================-->
+    
+</body>
+</html>

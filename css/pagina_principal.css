@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap');
+*{
+    margin: 0px;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.cabecalho{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #211c2c, #685896);
+    
+}
+.cabecalho > h4{
+    color: whitesmoke;
+    padding: 3px;
+    border-radius: 5px;
+}
+.principal{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #211c2c, #09070c);
+}
+.principal > div{
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    margin: 25px;
+}
+.principal > div > img{
+    width: 50px;
+    height: 50px;
+}
+.principal > div > button{
+    width: 130px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    display: flex;
+}
+.conteudo{
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens_site/bg_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo > div{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+
+}
+.conteudo > div > h2{
+    margin: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.depoimentos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: #201b2c;
+
+}
+.depoimentos > h1{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff88;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+}
+.card{
+    width: 70%;
+    height: auto;
+    margin: 15px;
+    background-color: #3d3353;
+    padding: 15px;
+    color: whitesmoke;
+    box-shadow: 0px 5px 40px black;
+    border-radius: 15px;
+}
+.card_endereco{
+    width: 70%;
+    height: auto;
+    margin: 15px;
+    background-color: #3d3353;
+    padding: 15px;
+    color: whitesmoke;
+    box-shadow: 0px 5px 40px black;
+    border-radius: 15px;
+}
+.end_contato{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #201b2c;
+}
+.card_endereco > h1{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ff88;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.card_end{
+    margin: 25px;
+    padding: 15px;
+    color: whitesmoke;
+    font-size: 17pt;
+}
+.rodape{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #191522, #3d3353);
+}
+.rodape > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
